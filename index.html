@@ -655,7 +655,7 @@
         // --- MODIFICADO: La aplicación ahora se inicia cargando datos desde el servidor ---
         async function initApp() {
             try {
-                const response = await fetch('/api/estaciones');
+                const response = await fetch('estaciones.json');
                 if (!response.ok) {
                     throw new Error('No se pudo conectar con el servidor de datos.');
                 }
